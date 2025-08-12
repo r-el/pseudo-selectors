@@ -28,10 +28,10 @@ const posts = [
 
 const cardContainer = document.getElementById("cards-container");
 
-posts.forEach((post) => {
+posts.forEach((post, index) => {
   const card = document.createElement("div");
-  card.className = "card";
-
+  card.className = `card blog-card blog-card-${index + 1}`;
+  card.id = `card-${index + 1}`; 
   const title = document.createElement("h2");
   title.className = "card-title";
   title.textContent = post.title;
