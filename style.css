@@ -39,6 +39,6 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: calc(var(--spacing) * 8);
   padding: 20px;
 }
