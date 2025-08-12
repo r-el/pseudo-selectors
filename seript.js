@@ -25,11 +25,23 @@ const posts = [
       "Managing state effectively is crucial for building robust React applications. We examine various state management solutions, from React's built-in useState and useContext hooks to popular libraries like Redux and Zustand. Discover which approach works best for different application sizes and complexity levels.",
   },
 ];
-console.log(23);
+
 const cardContainer = document.getElementById("cards-container");
-cardContainer.innerHTML = posts.map(
-  (post) => `<div class="card>
-            <h2 class="card-title">${post.title}</h2>
-            <p class="card-content">${post.content}</p>
-          <div/>`
-);
+
+posts.forEach((post) => {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  const title = document.createElement("h2");
+  title.className = "card-title";
+  title.textContent = post.title;
+
+  const content = document.createElement("p");
+  content.className = "card-content";
+  content.textContent = post.content;
+
+  card.appendChild(title);
+  card.appendChild(content);
+
+  cardContainer.appendChild(card);
+});
