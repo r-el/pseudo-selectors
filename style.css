@@ -1,3 +1,23 @@
 body {
-    background-color: #ebeff5;
+  background-color: #ebeff5;
+}
+
+header {
+    margin: 14px 98px 0px;
+}
+
+.relative {
+  position: relative;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
 }
