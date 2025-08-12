@@ -8,6 +8,8 @@
 
 body {
   background-color: #ebeff5;
+  margin-inline: auto;
+  max-width: 56em;
 }
 
 /* General rules */
