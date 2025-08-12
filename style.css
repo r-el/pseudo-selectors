@@ -44,3 +44,15 @@ header {
   gap: calc(var(--spacing) * 8);
   padding: 20px;
 }
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  padding-inline: calc(var(--spacing) * 6);
+  border-radius: calc(var(--radius) + 4px);
+  /* transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  box-shadow: 0 20px 40px #00000026;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+
