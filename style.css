@@ -27,6 +27,7 @@ header {
 
 #description {
   text-align: center;
+  color: oklch(0.373 0.034 259.733);
 }
 
 /* Cards rules */
