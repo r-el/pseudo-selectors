@@ -2,10 +2,7 @@ body {
   background-color: #ebeff5;
 }
 
-header {
-    margin: 14px 98px 0px;
-}
-
+/* General rules */
 .relative {
   position: relative;
 }
@@ -14,10 +11,20 @@ header {
   display: inline-block;
 }
 
+/* Header rules */
+header {
+  margin: 14px 98px 0px;
+}
+
 #title {
   text-align: center;
 }
 
 #description {
   text-align: center;
+}
+
+/* Cards rules */
+.cards-container {
+  display: flex;
 }
